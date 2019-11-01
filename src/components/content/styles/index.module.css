@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
 .typer {
   position: absolute;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
+  padding: 30px;
 }
 
 .preloader {
@@ -17,9 +20,9 @@
 }
 
 .left {
-  font-family: "Secular One";
+  font-family: "Oswald";
   color: #2f2e41;
-  padding: 100px 10px;
+  padding: 100px 100px;
 }
 
 .other-header {
@@ -27,5 +30,26 @@
 }
 
 .main-header {
+  font-family: "Oswald", "Mukta";
   color: #2f2e41;
+}
+
+.button {
+  background: #940a37;
+}
+
+.button-text {
+  color: #ff7956;
+}
+
+.button:hover {
+  background: #2f2e41;
+}
+
+.button:hover > .button-text {
+  color: #d9d9d9;
+}
+
+.button:hover > .font-awesome {
+  color: #f8a978;
 }
