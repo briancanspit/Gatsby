@@ -1,3 +1,15 @@
+.typer {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.preloader {
+  padding-top: 180px;
+  text-align: center;
+}
+
 .coffee-img {
   width: 550px;
   height: 550px;
@@ -7,9 +19,13 @@
 .left {
   font-family: "Secular One";
   color: #2f2e41;
-  padding: 100px 50px;
+  padding: 100px 10px;
 }
 
-.header {
+.other-header {
+  color: #ffd739;
+}
+
+.main-header {
   color: #2f2e41;
 }
