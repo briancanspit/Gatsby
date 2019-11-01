@@ -4,9 +4,11 @@ import HeaderStyle from "../styles/header.module.css"
 import Logo from "../images/logo.svg"
 
 class Header extends Component {
-  constructor() {
-    super()
-    this.state = {}
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: false,
+    }
   }
   render() {
     const linkClass = `nav-link ${HeaderStyle.link}`
@@ -14,7 +16,7 @@ class Header extends Component {
       <header className={HeaderStyle.header}>
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
           <div className="container">
-            <Link className={linkClass} to="/">
+            <Link className={`${linkClass} active`} to="/">
               <img src={Logo} className={HeaderStyle.logo} alt="Home" />
               <span className={HeaderStyle.logoName}>BREW</span>
             </Link>
@@ -32,13 +34,13 @@ class Header extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item" style={{ paddingRight: 25 }}>
-                  <Link className={linkClass} to="/register">
-                    Register
+                  <Link className={linkClass} to="/about">
+                    About
                   </Link>
                 </li>
                 <li className="nav-item" style={{ paddingRight: 25 }}>
-                  <Link className={linkClass} to="/login">
-                    Login
+                  <Link className={linkClass} to="/services">
+                    Services
                   </Link>
                 </li>
                 <li className="nav-item">
