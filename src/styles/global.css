@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Assistant|Mukta&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mukta|Secular+One&display=swap");
 
 body {
   background: #ff7956 !important;
-  font-family: "Mukta", "Assistant", sans-serif;
+  font-family: "Mukta", "Secular One", sans-serif;
 }
 
 .fade-in-left {

@@ -12,9 +12,10 @@ class Header extends Component {
   }
   render() {
     const linkClass = `nav-link ${HeaderStyle.link}`
+    const navClass = `navbar navbar-expand-lg fixed-top navbar-dark bg-dark`
     return (
       <header className={HeaderStyle.header}>
-        <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <nav className={navClass}>
           <div className="container">
             <Link className={`${linkClass} active`} to="/">
               <img src={Logo} className={HeaderStyle.logo} alt="Home" />
