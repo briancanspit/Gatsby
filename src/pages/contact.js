@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import MainContent from "../components/content/registerPage"
+import MainContent from "../components/content/contactPage"
 
-const RegisterPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
       <MainContent />
@@ -10,4 +10,4 @@ const RegisterPage = () => {
   )
 }
 
-export default RegisterPage
+export default ContactPage

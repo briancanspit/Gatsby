@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import MainContent from "../components/content/loginPage"
 
 const LoginPage = () => {
   return (
     <Layout>
-      <h1>Login form here</h1>
-      <p>Sign in to view this page</p>
+      <MainContent />
     </Layout>
   )
 }

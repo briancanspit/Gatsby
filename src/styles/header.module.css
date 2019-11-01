@@ -1,0 +1,17 @@
+.link {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.logo-name {
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: #ff7956;
+  position: absolute;
+  margin-top: 12.8px;
+}
