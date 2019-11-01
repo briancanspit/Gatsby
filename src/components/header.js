@@ -13,6 +13,8 @@ class Header extends Component {
   render() {
     const linkClass = `nav-link ${HeaderStyle.link}`
     const navClass = `navbar navbar-expand-lg fixed-top navbar-dark bg-dark`
+    const loginStyle = `nav-item ${HeaderStyle.loginButton}`
+    const loginText = `nav-link ${HeaderStyle.link} ${HeaderStyle.loginText}`
     return (
       <header className={HeaderStyle.header}>
         <nav className={navClass}>
@@ -44,9 +46,14 @@ class Header extends Component {
                     Services
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" style={{ paddingRight: 25 }}>
                   <Link className={linkClass} to="/contact">
                     Contact
+                  </Link>
+                </li>
+                <li className={loginStyle}>
+                  <Link className={loginText} to="/login">
+                    Log In
                   </Link>
                 </li>
               </ul>

@@ -9,8 +9,27 @@
 }
 
 .logo-name {
-  /* color: rgba(255, 255, 255, 0.5); */
   color: #ff7956;
   position: absolute;
   margin-top: 12.8px;
+}
+
+.login-button {
+  background: #ff7956;
+  color: #000 !important;
+  border-radius: 50px;
+  padding: 0px 20px;
+}
+
+.login-button:hover {
+  background: #01d28e;
+  cursor: pointer;
+}
+
+.login-text {
+  color: #333 !important;
+}
+
+.login-button:hover > .login-text {
+  color: #fff !important;
 }

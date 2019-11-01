@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import Typist from "react-typist"
 import Style from "./styles/index.module.css"
 import CoffeeImg from "../../images/coffee.svg"
@@ -16,10 +17,8 @@ const Content = () => {
     <div className="container-fluid">
       <div className="row">
         <div className={leftStyles}>
-          <h1 style={{ color: "#940a37", fontWeight: "bold" }}>
-            Espresso Heaven
-          </h1>
-          <h4 style={{ width: 435, paddingTop: 20 }}>
+          <h1 className={Style.tagline}>Espresso Heaven</h1>
+          <h4 className={Style.contentText}>
             We are the leading provider of packaged coffee in Kenya, and operate
             in over 150 locations.
             <br />
@@ -29,22 +28,26 @@ const Content = () => {
           </h4>
           <br />
           <br />
-          <button className={btnStyle1}>
-            <span className={btnText}>Make An Order</span>
-            <FontAwesomeIcon
-              className={Style.fontAwesome}
-              icon={faMugHot}
-              color="#dfddc7"
-            />
-          </button>
-          <button className={btnStyle2}>
-            <span className={btnText}>See Our Works</span>
-            <FontAwesomeIcon
-              className={Style.fontAwesome}
-              icon={faArrowAltCircleRight}
-              color="#dfddc7"
-            />
-          </button>
+          <Link to="/login">
+            <button className={btnStyle1}>
+              <span className={btnText}>Make An Order</span>
+              <FontAwesomeIcon
+                className={Style.fontAwesome}
+                icon={faMugHot}
+                color="#dfddc7"
+              />
+            </button>
+          </Link>
+          <Link to="/services">
+            <button className={btnStyle2}>
+              <span className={btnText}>See Our Works</span>
+              <FontAwesomeIcon
+                className={Style.fontAwesome}
+                icon={faArrowAltCircleRight}
+                color="#dfddc7"
+              />
+            </button>
+          </Link>
         </div>
         <div className="col-md-6 fade-in-right">
           <img className={Style.coffeeImg} src={CoffeeImg} alt="Coffee Cup" />
@@ -58,11 +61,11 @@ const Loader = () => {
   return (
     <React.Fragment>
       <div className={Style.typer}>
-        <Typist avgTypingDelay={55} startDelay={500}>
+        <Typist avgTypingDelay={65} startDelay={500}>
           <h1 className={Style.mainHeader}>Running late?</h1>
-          <Typist.Backspace count={40} delay={255} />
-          <h1 className={Style.mainHeader}>Didn't have coffee?</h1>
-          <Typist.Backspace count={40} delay={260} />
+          <Typist.Backspace count={25} delay={255} />
+          <h1 className={Style.mainHeader}>Need some coffee?</h1>
+          <Typist.Backspace count={30} delay={260} />
           <h1 className={Style.mainHeader}>
             Introducing <span style={{ fontWeight: "bold" }}>Brew</span>.
           </h1>
@@ -93,7 +96,7 @@ class MainContent extends Component {
     if (!this.state.loaded) {
       setTimeout(() => {
         this.handleContent()
-      }, 9700)
+      }, 9300)
       return <div>{Loader()}</div>
     } else {
       return <div>{Content()}</div>
