@@ -18,6 +18,11 @@
   margin-top: -20px;
 }
 
+.success {
+  background: #01d28e !important;
+  color: #f8f8f8 !important;
+}
+
 .submit-button {
   background: #01d28e !important;
   color: #f8f8f8 !important;

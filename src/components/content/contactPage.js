@@ -4,6 +4,7 @@ import Styles from "./styles/contact.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
+//add loader to maps to display while fetching
 const LoadingContainer = () => (
   <div className={Styles.preloader}>
     <img src={require("../../images/preloader.svg")} alt="Preloader" />
@@ -17,13 +18,16 @@ class MainContent extends Component {
       isPopoverOpen: false,
       submitted: false,
       firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
     }
   }
 
   handleChange = event => {
-    const { value } = event.target
+    const { name, value } = event.target
     this.setState({
-      firstName: value,
+      [name]: value,
     })
   }
 
@@ -33,15 +37,26 @@ class MainContent extends Component {
     })
   }
 
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault()
     this.setState({
       submitted: true,
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
     })
+    setTimeout(() => {
+      this.setState({
+        submitted: false,
+      })
+    }, 3000)
   }
 
   handleMessage = () => {
+    let success = `alert ${Styles.success}`
     if (this.state.submitted) {
-      return <span className="alert alert-success">Your message was sent!</span>
+      return <span className={success}>Your message was sent!</span>
     }
     if (this.state.firstName.length > 0) {
       return (
@@ -75,7 +90,7 @@ class MainContent extends Component {
                     className="badge badge-warning mr-2"
                     style={{ fontSize: 14 }}
                   >
-                    We solve issues
+                    We listen
                   </p>
                   <p
                     className="badge badge-success mr-2"
@@ -93,6 +108,7 @@ class MainContent extends Component {
                       <input
                         type="text"
                         name="firstName"
+                        value={this.state.firstName}
                         className="form-control"
                         placeholder="First Name"
                         maxLength="15"
@@ -103,8 +119,11 @@ class MainContent extends Component {
                     <div className="col">
                       <input
                         type="text"
+                        name="lastName"
+                        value={this.state.lastName}
                         className="form-control"
                         placeholder="Last Name"
+                        onChange={this.handleChange}
                         required
                       />
                     </div>
@@ -113,15 +132,20 @@ class MainContent extends Component {
                     <input
                       type="email"
                       name="email"
+                      value={this.state.email}
                       className="form-control"
                       placeholder="Email Address"
+                      onChange={this.handleChange}
                       required
                     />
                   </div>
                   <div className="form-group">
                     <textarea
+                      name="message"
+                      value={this.state.message}
                       className="form-control"
                       placeholder="Your Message"
+                      onChange={this.handleChange}
                       rows="7"
                       required
                     ></textarea>
@@ -176,4 +200,5 @@ class MainContent extends Component {
 
 export default GoogleApiWrapper({
   apiKey: process.env.GOOGLE_MAPS_API_KEY,
+  LoadingContainer: LoadingContainer,
 })(MainContent)
