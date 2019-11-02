@@ -46,7 +46,7 @@ class MainContent extends Component {
     if (this.state.firstName.length > 0) {
       return (
         <span className="alert alert-info">
-          We're anxious for your message, {this.state.firstName}
+          We'd love to hear from you, {this.state.firstName}
         </span>
       )
     } else {
@@ -64,17 +64,30 @@ class MainContent extends Component {
       <div className={Styles.container}>
         <div className={card}>
           <div className="row no-gutters">
-            <div className="col-md-5">
+            <div className="col-md-5 col-sm-6">
               <div className="card-body">
-                <h5 className={cardTitle}>We'd love to hear from you</h5>
+                <h5 className={cardTitle}>Talk to us today</h5>
                 <div className="text-center mt-3 mb-3">
-                  <p className="badge badge-info mr-2">We love ideas</p>
-                  <p className="badge badge-warning mr-2">We solve issues</p>
-                  <p className="badge badge-danger mr-2">We act fast</p>
-                  <p className="badge badge-success mr-2">We value you</p>
+                  <p className="badge badge-info mr-2" style={{ fontSize: 14 }}>
+                    We love ideas
+                  </p>
+                  <p
+                    className="badge badge-warning mr-2"
+                    style={{ fontSize: 14 }}
+                  >
+                    We solve issues
+                  </p>
+                  <p
+                    className="badge badge-success mr-2"
+                    style={{ fontSize: 14 }}
+                  >
+                    We value you
+                  </p>
                 </div>
-                <div className="mb-4 mt-0">{this.handleMessage()}</div>
-                <form onSubmit={this.handleSubmit}>
+                <div className="mb-4 mt-0 text-center">
+                  {this.handleMessage()}
+                </div>
+                <form onSubmit={this.handleSubmit} method="post">
                   <div className="row mb-3">
                     <div className="col">
                       <input
@@ -128,7 +141,7 @@ class MainContent extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7 col-sm-6">
               {this.state.isPopoverOpen ? (
                 <span className="alert alert-success mb-4">
                   Haile Selassie Ave, P.O. BOX 1234-30200, Nairobi KE
