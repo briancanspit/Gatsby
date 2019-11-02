@@ -20,11 +20,9 @@ const Content = () => {
           <h1 className={Style.tagline}>Espresso Heaven</h1>
           <h4 className={Style.contentText}>
             We are the leading provider of packaged coffee in Kenya, and operate
-            in over 150 locations.
-            <br />
-            <br />
-            Get your coffee delivered to you for <em>free</em> today. Make an
-            order or explore our site.
+            in over 150 locations. Get your coffee delivered to you for{" "}
+            <em>free</em>! Make an order today or explore our site to see what
+            we do.
           </h4>
           <br />
           <br />
