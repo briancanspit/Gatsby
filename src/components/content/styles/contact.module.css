@@ -1,0 +1,31 @@
+.container {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px 70px;
+}
+
+.card {
+  padding: 30px 10px 30px 10px;
+}
+
+.card-title {
+  color: #2f2e41;
+  margin-top: -20px;
+}
+
+.submit-button {
+  background: #01d28e !important;
+  color: #f8f8f8 !important;
+  font-size: 20px !important;
+}
+
+.submit-button:hover {
+  background: #ff7956 !important;
+  color: #f8f8f8 !important;
+  letter-spacing: 1.5px !important;
+  font-size: 20px !important;
+}
+
+.font-awesome {
+  color: #f8f8f8;
+}
