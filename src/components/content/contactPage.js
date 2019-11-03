@@ -111,7 +111,7 @@ class MainContent extends Component {
                         value={this.state.firstName}
                         className="form-control"
                         placeholder="First Name"
-                        maxLength="15"
+                        maxLength="14"
                         onChange={this.handleChange}
                         required
                       />
