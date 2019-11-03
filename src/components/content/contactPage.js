@@ -74,9 +74,9 @@ class MainContent extends Component {
     let card = `card mb-3 ${Styles.card}`
     let cardTitle = `card-title text-center ${Styles.cardTitle}`
     let submitBtn = ` btn btn-block ${Styles.submitButton} mb-2`
-
+    let container = `fade-in-bck ${Styles.container}`
     return (
-      <div className={Styles.container}>
+      <div className={container}>
         <div className={card}>
           <div className="row no-gutters">
             <div className="col-md-5 col-sm-6">
