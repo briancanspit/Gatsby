@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow&display=swap");
 
 .typer {
   margin-top: -5px;
@@ -6,7 +6,7 @@
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 30px 30px 30px;
+  padding-top: 5px;
 }
 
 .typer-style {
@@ -49,6 +49,7 @@
 }
 
 .content-text {
+  font-family: "PT Sans Narrow";
   text-align: left;
   padding-top: 20px;
   color: #242e41;
@@ -82,7 +83,6 @@
   font-size: 18px !important;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .btn-two {
     margin-top: 10px !important;
