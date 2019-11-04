@@ -11,7 +11,7 @@ import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 const Content = () => {
   let typeText = `badge badge-warning ${Style.mainHeader} ${Style.typerStyle}`
   let leftStyles = `col-md-6 fade-in-left ${Style.left}`
-  let btnStyle1 = `btn btn-lg ${Style.button} mr-2`
+  let btnStyle1 = `btn btn-lg ${Style.button} mr-2 mb-2`
   let btnStyle2 = `btn btn-lg ${Style.button}`
   let btnText = `mr-2 ${Style.buttonText}`
   let container = `container-fluid ${Style.container}`
