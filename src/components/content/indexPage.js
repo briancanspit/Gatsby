@@ -49,11 +49,9 @@ const Content = () => {
               Kenya and deliver it for <strong>free</strong>!
             </h4>
             <br />
-            <br />
             <Link to="/about">
               <button className={btnStyle1}>
                 <span className={btnText}>Learn More</span>
-
                 <FontAwesomeIcon
                   className={Style.fontAwesome}
                   icon={faMugHot}
