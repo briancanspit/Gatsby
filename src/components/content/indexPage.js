@@ -19,7 +19,7 @@ const Content = () => {
     <React.Fragment>
       <Typist
         avgTypingDelay={65}
-        startDelay={1600}
+        startDelay={1200}
         cursor={{ show: false, blink: false, hideWhenDone: true }}
         className={Style.typer}
       >
