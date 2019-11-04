@@ -111,8 +111,10 @@ class MainContent extends Component {
                   onSubmit={this.handleSubmit}
                   method="post"
                   data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   name="contact"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="row mb-3">
                     <div className="col">
                       <input
