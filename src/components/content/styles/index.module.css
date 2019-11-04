@@ -82,6 +82,9 @@
   font-size: 18px !important;
 }
 
-.mobile-margin {
-  margin-top: 10px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .btn-two {
+    margin-top: 10px !important;
+  }
 }

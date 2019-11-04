@@ -12,9 +12,8 @@ const Content = () => {
   let typeText = `badge badge-warning ${Style.mainHeader} ${Style.typerStyle}`,
     leftStyles = `col-md-6 fade-in-left ${Style.left}`,
     btnStyle1 = `btn btn-lg ${Style.button} mr-2`,
-    btnStyle2 = `btn btn-lg ${Style.button}`,
+    btnStyle2 = `btn btn-lg ${Style.button} ${Style.btnTwo}`,
     btnText = `mr-2 ${Style.buttonText}`,
-    visibleOnMobile = `${Style.mobileMargin} visible-xs`,
     container = `container-fluid ${Style.container}`
   return (
     <React.Fragment>
@@ -59,7 +58,6 @@ const Content = () => {
                 />
               </button>
             </Link>
-            <div className={visibleOnMobile}></div>
             <Link to="/services">
               <button className={btnStyle2}>
                 <span className={btnText}>See Our Works</span>
