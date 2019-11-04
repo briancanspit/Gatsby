@@ -42,6 +42,7 @@
 
 .map-div {
   height: 520px;
+  width: 50%;
 }
 
 @media only screen and (max-width: 600px) {

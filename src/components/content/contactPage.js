@@ -173,7 +173,7 @@ class MainContent extends Component {
                 </span>
               ) : (
                 <span className="alert alert-warning mb-4">
-                  Hover over the map to view our address
+                  Here's our location
                 </span>
               )}
               <div onMouseOver={this.handleHover} onMouseOut={this.handleHover}>
