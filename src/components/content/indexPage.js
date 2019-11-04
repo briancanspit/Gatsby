@@ -9,7 +9,7 @@ import { faMugHot } from "@fortawesome/free-solid-svg-icons"
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Content = () => {
-  let typeText = `badge badge-warning ${Style.mainHeader} ${Style.typerStyle}`
+  let typeText = ` ${Style.mainHeader} ${Style.typerStyle}`
   let leftStyles = `col-md-6 fade-in-left ${Style.left}`
   let btnStyle1 = `btn btn-lg ${Style.button} mr-2`
   let btnStyle2 = `btn btn-lg ${Style.button}`
@@ -17,7 +17,12 @@ const Content = () => {
   let container = `container-fluid ${Style.container}`
   return (
     <React.Fragment>
-      <Typist avgTypingDelay={65} startDelay={1600} className={Style.typer}>
+      <Typist
+        avgTypingDelay={65}
+        startDelay={1600}
+        cursor={{ hideWhenDone: true }}
+        className={Style.typer}
+      >
         <p className={typeText}>Running late for work?</p>
         <Typist.Backspace count={22} delay={255} />
         <Typist.Delay ms={800} />
