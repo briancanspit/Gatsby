@@ -63,7 +63,9 @@ class MainContent extends Component {
       return (
         <span className={info}>
           Thanks,{" "}
-          {`${this.state.firstName.charAt(0).toUpperCase() + this.state.firstName.slice(1)}`}!
+          {`${this.state.firstName.charAt(0).toUpperCase() +
+            this.state.firstName.slice(1)}`}
+          !
         </span>
       )
     } else {
@@ -105,7 +107,12 @@ class MainContent extends Component {
                 <div className="mb-4 mt-0 text-center">
                   {this.handleMessage()}
                 </div>
-                <form onSubmit={this.handleSubmit} method="post">
+                <form
+                  onSubmit={this.handleSubmit}
+                  method="post"
+                  data-netlify="true"
+                  name="contact"
+                >
                   <div className="row mb-3">
                     <div className="col">
                       <input
