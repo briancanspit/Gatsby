@@ -79,7 +79,7 @@ class MainContent extends Component {
       <div className={container}>
         <div className={card}>
           <div className="row no-gutters">
-            <div className="col-md-5 col-sm-6">
+            <div className="col-md-5 col-sm-12">
               <div className="card-body">
                 <h5 className={cardTitle}>Talk to us today</h5>
                 <div className="text-center mt-3 mb-3">
