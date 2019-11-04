@@ -169,7 +169,7 @@ class MainContent extends Component {
             <div className={mapDiv}>
               {this.state.isPopoverOpen ? (
                 <span className="alert alert-success mb-4">
-                  Haile Selassie Ave, P.O. BOX 1234-30200, Nairobi KE
+                  Haile Selassie Ave, Nairobi KE
                 </span>
               ) : (
                 <span className="alert alert-warning mb-4">
