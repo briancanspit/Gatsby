@@ -55,15 +55,12 @@ class MainContent extends Component {
 
   handleMessage = () => {
     let success = `alert ${Styles.success}`
+    let info = `alert alert-info ${Styles.info}`
     if (this.state.submitted) {
       return <span className={success}>Your message was sent!</span>
     }
     if (this.state.firstName.length > 0) {
-      return (
-        <span className="alert alert-info">
-          We'd love to hear from you, {this.state.firstName}
-        </span>
-      )
+      return <span className={info}>Thanks, {this.state.firstName}!</span>
     } else {
       return null
     }
@@ -112,7 +109,7 @@ class MainContent extends Component {
                         value={this.state.firstName}
                         className="form-control"
                         placeholder="First Name"
-                        maxLength="14"
+                        maxLength="10"
                         onChange={this.handleChange}
                         required
                       />
