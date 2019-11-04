@@ -54,6 +54,7 @@ const Content = () => {
                   className={Style.fontAwesome}
                   icon={faMugHot}
                   color="#dfddc7"
+                  width="20"
                 />
               </button>
             </Link>
@@ -64,6 +65,7 @@ const Content = () => {
                   className={Style.fontAwesome}
                   icon={faArrowAltCircleRight}
                   color="#dfddc7"
+                  width="20"
                 />
               </button>
             </Link>
