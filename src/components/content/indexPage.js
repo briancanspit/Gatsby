@@ -18,16 +18,16 @@ const Content = () => {
   return (
     <React.Fragment>
       <Typist avgTypingDelay={65} startDelay={1600} className={Style.typer}>
-        <h1 className={typeText}>Running late for work?</h1>
+        <p className={typeText}>Running late for work?</p>
         <Typist.Backspace count={22} delay={255} />
         <Typist.Delay ms={800} />
-        <h1 className={typeText}>Forgot your morning coffee?</h1>
+        <p className={typeText}>Forgot your morning coffee?</p>
         <Typist.Backspace count={27} delay={260} />
         <Typist.Delay ms={800} />
-        <h1 className={typeText}>
+        <p className={typeText}>
           Introducing <span style={{ fontWeight: "bold" }}>Brew</span> -{" "}
           <Typist.Delay ms={300} /> coffee delivery made easy! 🥤
-        </h1>
+        </p>
       </Typist>
       <div className={container}>
         <div className="row">
