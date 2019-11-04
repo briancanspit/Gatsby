@@ -31,7 +31,7 @@ const Content = () => {
         <Typist.Delay ms={800} />
         <p className={typeText}>
           Welcome to <span style={{ fontWeight: "bold" }}>Brew</span>{" "}
-          <Typist.Delay ms={50} /> 🥤
+          <Typist.Delay ms={50} /> ♡
         </p>
       </Typist>
       <div className={container}>
