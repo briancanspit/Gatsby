@@ -60,7 +60,12 @@ class MainContent extends Component {
       return <span className={success}>Your message was sent!</span>
     }
     if (this.state.firstName.length > 0) {
-      return <span className={info}>Thanks, {this.state.firstName}!</span>
+      return (
+        <span className={info}>
+          Thanks,{" "}
+          {`${this.state.firstName.charAt(0).toUpperCase() + this.state.firstName.slice(1)}`}!
+        </span>
+      )
     } else {
       return null
     }
