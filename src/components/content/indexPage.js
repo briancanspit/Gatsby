@@ -43,10 +43,10 @@ const Content = () => {
             <h3 className={Style.tagline}>Stir. Pack. Serve.</h3>
             <h2 className={Style.tagTwo}>Experience ultimate fudginess</h2>
             <h4 className={Style.contentText}>
-              Let's face it - we all run late once in a while, making us not
-              have that warm cup of morning coffee that we so desire. Why let
-              that get in your way? We prepare and package the best coffee in
-              Kenya and deliver it for <strong>free</strong>!
+              Let's face it - we all run late once in a while, forsaking that
+              warm cup of coffee that we so desire. Don't let that get in your
+              way. We prepare the best coffee in Kenya and deliver it to you for{" "}
+              <strong>free</strong>!
             </h4>
             <br />
             <Link to="/about">

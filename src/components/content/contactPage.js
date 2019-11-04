@@ -68,9 +68,9 @@ class MainContent extends Component {
       return null
     }
   }
-
   render() {
-    const mapStyles = { width: "100%", height: "90%" }
+    
+    const mapStyles = { width: "650px", height: "450px" }
     let card = `card mb-3 ${Styles.card}`
     let cardTitle = `card-title text-center ${Styles.cardTitle}`
     let submitBtn = ` btn btn-block ${Styles.submitButton} mb-2`
@@ -165,7 +165,7 @@ class MainContent extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-md-7 col-sm-6">
+            <div className="col-md-7 col-sm-12">
               {this.state.isPopoverOpen ? (
                 <span className="alert alert-success mb-4">
                   Haile Selassie Ave, P.O. BOX 1234-30200, Nairobi KE
