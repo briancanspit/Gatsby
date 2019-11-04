@@ -50,9 +50,10 @@ const Content = () => {
             </h4>
             <br />
             <br />
-            <Link to="/login">
+            <Link to="/about">
               <button className={btnStyle1}>
-                <span className={btnText}>Make An Order</span>
+                <span className={btnText}>Learn More</span>
+
                 <FontAwesomeIcon
                   className={Style.fontAwesome}
                   icon={faMugHot}
@@ -61,9 +62,9 @@ const Content = () => {
                 />
               </button>
             </Link>
-            <Link to="/services">
+            <Link to="/login">
               <button className={btnStyle2}>
-                <span className={btnText}>See Our Works</span>
+                <span className={btnText}>Order Now</span>
                 <FontAwesomeIcon
                   className={Style.fontAwesome}
                   icon={faArrowAltCircleRight}
