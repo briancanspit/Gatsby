@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import Typist from "react-typist"
+import "../../../node_modules/react-typist/dist/Typist.css"
 import Style from "./styles/index.module.css"
 import CoffeeImg from "../../images/coffee.svg"
 import "../../../node_modules/react-typist/dist/Typist.css"
