@@ -10,8 +10,8 @@ import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Content = () => {
   let typeText = `badge badge-warning ${Style.mainHeader} ${Style.typerStyle}`,
-    leftStyles = `col-md-6 fade-in-left ${Style.left}`,
-    btnStyle1 = `btn btn-lg ${Style.button} mr-2`,
+    leftStyles = `col-md-6 col-md-pull-6 fade-in-left ${Style.left}`,
+    btnStyle1 = `btn btn-lg ${Style.button} ${Style.btnOne} mr-2`,
     btnStyle2 = `btn btn-lg ${Style.button} ${Style.btnTwo}`,
     btnText = `mr-2 ${Style.buttonText}`,
     container = `container-fluid ${Style.container}`
@@ -36,6 +36,9 @@ const Content = () => {
       </Typist>
       <div className={container}>
         <div className="row">
+          <div className="col-md-6 col-md-push-6 fade-in-right">
+            <img className={Style.coffeeImg} src={CoffeeImg} alt="Coffee Cup" />
+          </div>
           <div className={leftStyles}>
             <h3 className={Style.tagline}>Stir. Pack. Serve.</h3>
             <h2 className={Style.tagTwo}>Experience ultimate fudginess</h2>
@@ -69,9 +72,6 @@ const Content = () => {
                 />
               </button>
             </Link>
-          </div>
-          <div className="col-md-6 fade-in-right">
-            <img className={Style.coffeeImg} src={CoffeeImg} alt="Coffee Cup" />
           </div>
         </div>
       </div>
