@@ -50,7 +50,7 @@ const MainContent = () => {
           </div>
           <div className="row">
             <div className="col-md-6">
-              <h4 className={Style.headers}>Oriented</h4>
+              <h4 className={Style.headers}>Thoughtful</h4>
               <p className={Style.content}>
                 By bringing your coffee right to your office doorstep, we let
                 you focus on your work
