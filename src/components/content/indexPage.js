@@ -5,8 +5,7 @@ import Style from "./styles/index.module.css"
 import CoffeeImg from "../../images/coffee.svg"
 import "../../../node_modules/react-typist/dist/Typist.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMugHot } from "@fortawesome/free-solid-svg-icons"
-import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
+import { faMugHot, faCartPlus } from "@fortawesome/free-solid-svg-icons"
 
 const Content = () => {
   let typeText = `badge badge-warning ${Style.mainHeader} ${Style.typerStyle}`,
@@ -65,7 +64,7 @@ const Content = () => {
                 <span className={btnText}>Order Yours</span>
                 <FontAwesomeIcon
                   className={Style.fontAwesome}
-                  icon={faArrowAltCircleRight}
+                  icon={faCartPlus}
                   color="#dfddc7"
                   width="18"
                 />

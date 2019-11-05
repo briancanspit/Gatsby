@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faWineGlassAlt, faHome } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
+import { isMobile } from "react-device-detect"
 import Style from "./styles/about.module.css"
 import Drink from "../../images/drink.svg"
 import Happy from "../../images/winter.svg"
@@ -18,7 +19,7 @@ const MainContent = () => {
   return (
     <div className={mainContainer}>
       <div className={Style.top}>
-        <h5 className={Style.head}>About Us</h5>
+        <h5 className={Style.head}>{isMobile ? "We Are" : "About Us"}</h5>
       </div>
 
       <div className={innerContainer}>

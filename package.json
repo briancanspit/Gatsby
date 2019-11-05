@@ -22,6 +22,7 @@
     "gatsby": "^2.17.6",
     "google-maps-react": "^2.0.2",
     "react": "^16.11.0",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.11.0",
     "react-typist": "^2.0.5"
   },
