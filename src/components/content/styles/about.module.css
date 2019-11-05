@@ -1,4 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow&display=swap");
+
+.container {
+  width: 100% !important;
+  font-family: "Oswald";
+  color: #2f2e41;
+}
+
+.top {
+  text-align: center;
+}
+
+.head {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.inner {
+  margin-top: 2%;
+  width: 100% !important;
+}
+
 .images {
   width: 100%;
   height: 100%;
+  padding: 5%;
+}
+
+.headers {
+  padding: 5% 0 0 10%;
+  font-size: 35px;
+  color: #940a37;
+}
+
+.content {
+  padding: 5% 10% 10% 10%;
+  font-size: 25px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.button {
+  background: #2f2e41 !important;
+}
+
+.button-text {
+  font-family: "Mukta";
+  color: #f5f0e3;
+}
+
+.button:hover {
+  background: #940a37 !important;
+}
+
+.button:hover > .button-text {
+  color: #f1bc31;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.button:hover > .font-awesome {
+  color: #f1bc31;
+}
+
+.font-awesome {
+  color: #f5f0e3;
+  font-size: 18px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-one {
+    margin-left: 10px;
+  }
+  .btn-two {
+    margin-top: 10px !important;
+  }
+  .top {
+    display: none;
+  }
+  .content {
+    font-size: 18px;
+  }
+  .headers {
+    font-size: 30px;
+  }
 }

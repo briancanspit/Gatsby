@@ -1,40 +1,94 @@
 import React from "react"
+import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faArrowAltCircleRight,
+  faHome,
+} from "@fortawesome/free-solid-svg-icons"
 import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import Style from "./styles/about.module.css"
-import Dine from "../../images/dine.svg"
-import Virtual from "../../images/virtual.svg"
+import Drink from "../../images/drink.svg"
+import Happy from "../../images/winter.svg"
 import World from "../../images/universe.svg"
 
 const MainContent = () => {
+  let mainContainer = `${Style.container}`
+  let innerContainer = `container-fluid fade-in-bck ${Style.inner}`
+  let btnStyle1 = `btn btn-lg ${Style.button} ${Style.btnOne} mr-2`,
+    btnStyle2 = `btn btn-lg ${Style.button} ${Style.btnTwo}`,
+    btnText = `mr-2 ${Style.buttonText}`
   return (
-    <div className="container-fluid fade-in-bck">
-      <Carousel autoPlay={4000} animationSpeed={1500} infinite arrows>
-        <div className="row">
-          <div className="col-md-6">
-            <h2>Organization</h2>
+    <div className={mainContainer}>
+      <div className={Style.top}>
+        <h5 className={Style.head}>About Brew</h5>
+      </div>
+
+      <div className={innerContainer}>
+        <Carousel autoPlay={4000} animationSpeed={1500} infinite arrows>
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className={Style.headers}>Distributed</h4>
+              <p className={Style.content}>
+                We are the largest coffee vending company across the country
+                with over 150 branches
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img src={World} className={Style.images} alt="Country wide" />
+            </div>
           </div>
-          <div className="col-md-6">
-            <img src={Dine} className={Style.images} alt="Organized" />
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className={Style.headers}>Considerate</h4>
+              <p className={Style.content}>
+                Our riders deliver coffee to your place of work or current
+                location at no fee whatsoever
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img src={Drink} className={Style.images} alt="Organized" />
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <h2>Satisfaction</h2>
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className={Style.headers}>Oriented</h4>
+              <p className={Style.content}>
+                By bringing your coffee right to your office doorstep, we let
+                you focus on your work
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img src={Happy} className={Style.images} alt="Satisfying" />
+            </div>
           </div>
-          <div className="col-md-6">
-            <img src={Virtual} className={Style.images} alt="Satisfying" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <h2>Availability</h2>
-          </div>
-          <div className="col-md-6">
-            <img src={World} className={Style.images} alt="Country wide" />
-          </div>
-        </div>
-      </Carousel>
+        </Carousel>
+      </div>
+
+      <div className={Style.bottom}>
+        <Link to="/services">
+          <button className={btnStyle1}>
+            <span className={btnText}>Our Services</span>
+            <FontAwesomeIcon
+              className={Style.fontAwesome}
+              icon={faArrowAltCircleRight}
+              color="#dfddc7"
+              width="18"
+            />
+          </button>
+        </Link>
+        <Link to="/">
+          <button className={btnStyle2}>
+            <span className={btnText}>Back To Home</span>
+            <FontAwesomeIcon
+              className={Style.fontAwesome}
+              icon={faHome}
+              color="#dfddc7"
+              width="18"
+            />
+          </button>
+        </Link>
+      </div>
     </div>
   )
 }
