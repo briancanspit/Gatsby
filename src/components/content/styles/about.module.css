@@ -88,8 +88,12 @@
   .headers {
     font-size: 30px;
     padding-top: 10%;
+    padding-left: 0;
   }
   .bottom {
     padding-top: 20%;
+  }
+  .container {
+    text-align: center;
   }
 }
