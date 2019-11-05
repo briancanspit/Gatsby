@@ -28,7 +28,7 @@ const MainContent = () => {
             <div className="col-md-6">
               <h4 className={Style.headers}>Distributed</h4>
               <p className={Style.content}>
-                We are the largest coffee vending company across the country
+                Brew is the largest coffee vending company across the country
                 with over 150 branches
               </p>
             </div>
