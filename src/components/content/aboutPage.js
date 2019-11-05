@@ -1,10 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faArrowAltCircleRight,
-  faHome,
-} from "@fortawesome/free-solid-svg-icons"
+import { faWineGlassAlt, faHome } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import Style from "./styles/about.module.css"
@@ -21,11 +18,11 @@ const MainContent = () => {
   return (
     <div className={mainContainer}>
       <div className={Style.top}>
-        <h5 className={Style.head}>About Brew</h5>
+        <h5 className={Style.head}>About Us</h5>
       </div>
 
       <div className={innerContainer}>
-        <Carousel autoPlay={4000} animationSpeed={1500} infinite arrows>
+        <Carousel autoPlay={7000} animationSpeed={1500} infinite arrows>
           <div className="row">
             <div className="col-md-6">
               <h4 className={Style.headers}>Distributed</h4>
@@ -68,10 +65,10 @@ const MainContent = () => {
       <div className={Style.bottom}>
         <Link to="/services">
           <button className={btnStyle1}>
-            <span className={btnText}>Our Services</span>
+            <span className={btnText}>View Our Services</span>
             <FontAwesomeIcon
               className={Style.fontAwesome}
-              icon={faArrowAltCircleRight}
+              icon={faWineGlassAlt}
               color="#dfddc7"
               width="18"
             />
@@ -79,7 +76,7 @@ const MainContent = () => {
         </Link>
         <Link to="/">
           <button className={btnStyle2}>
-            <span className={btnText}>Back To Home</span>
+            <span className={btnText}>Back To Home Page</span>
             <FontAwesomeIcon
               className={Style.fontAwesome}
               icon={faHome}
