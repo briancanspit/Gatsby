@@ -82,8 +82,14 @@
   }
   .content {
     font-size: 18px;
+    padding-top: 10%;
+    padding-bottom: 20%;
   }
   .headers {
     font-size: 30px;
+    padding-top: 10%;
+  }
+  .bottom {
+    padding-top: 20%;
   }
 }
