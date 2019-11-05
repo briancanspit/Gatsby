@@ -6,9 +6,9 @@ import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import { isMobile } from "react-device-detect"
 import Style from "./styles/about.module.css"
-import Drink from "../../images/drink.svg"
-import Happy from "../../images/winter.svg"
-import World from "../../images/universe.svg"
+import DrinkImg from "../../images/drink.svg"
+import HappyImg from "../../images/winter.svg"
+import WorldImg from "../../images/universe.svg"
 
 const MainContent = () => {
   let mainContainer = `${Style.container}`
@@ -33,7 +33,7 @@ const MainContent = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img src={World} className={Style.images} alt="Country wide" />
+              <img src={WorldImg} className={Style.images} alt="Country wide" />
             </div>
           </div>
           <div className="row">
@@ -45,7 +45,7 @@ const MainContent = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img src={Drink} className={Style.images} alt="Organized" />
+              <img src={DrinkImg} className={Style.images} alt="Organized" />
             </div>
           </div>
           <div className="row">
@@ -57,7 +57,7 @@ const MainContent = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img src={Happy} className={Style.images} alt="Satisfying" />
+              <img src={HappyImg} className={Style.images} alt="Satisfying" />
             </div>
           </div>
         </Carousel>
