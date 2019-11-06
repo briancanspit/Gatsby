@@ -10,12 +10,41 @@ import DrinkImg from "../../images/drink.svg"
 import HappyImg from "../../images/winter.svg"
 import WorldImg from "../../images/universe.svg"
 
-const MainContent = () => {
-  let mainContainer = `${Style.container}`
-  let innerContainer = `container-fluid fade-in-bck ${Style.inner}`
+const renderBtns = () => {
   let btnStyle1 = `btn btn-lg ${Style.button} ${Style.btnOne} mr-2`,
     btnStyle2 = `btn btn-lg ${Style.button} ${Style.btnTwo}`,
     btnText = `mr-2 ${Style.buttonText}`
+  return (
+    <React.Fragment>
+      <Link to="/services">
+        <button className={btnStyle1}>
+          <span className={btnText}>View Our Services</span>
+          <FontAwesomeIcon
+            className={Style.fontAwesome}
+            icon={faWineGlassAlt}
+            color="#dfddc7"
+            width="18"
+          />
+        </button>
+      </Link>
+      <Link to="/">
+        <button className={btnStyle2}>
+          <span className={btnText}>Back To Home Page</span>
+          <FontAwesomeIcon
+            className={Style.fontAwesome}
+            icon={faHome}
+            color="#dfddc7"
+            width="18"
+          />
+        </button>
+      </Link>
+    </React.Fragment>
+  )
+}
+
+const MainContent = () => {
+  let mainContainer = `${Style.container}`
+  let innerContainer = `container-fluid fade-in-bck ${Style.inner}`
   return (
     <div className={mainContainer}>
       <div className={Style.top}>
@@ -31,6 +60,11 @@ const MainContent = () => {
                 Brew is the largest coffee vending company across the country
                 with over 150 branches
               </p>
+              {!isMobile ? (
+                <div className={Style.desktopBtn}>{renderBtns()}</div>
+              ) : (
+                <React.Fragment></React.Fragment>
+              )}
             </div>
             <div className="col-md-6">
               <img src={WorldImg} className={Style.images} alt="Country wide" />
@@ -43,6 +77,11 @@ const MainContent = () => {
                 Our riders deliver coffee to your place of work or current
                 location at no fee whatsoever
               </p>
+              {!isMobile ? (
+                <div className={Style.desktopBtn}>{renderBtns()}</div>
+              ) : (
+                <React.Fragment></React.Fragment>
+              )}
             </div>
             <div className="col-md-6">
               <img src={DrinkImg} className={Style.images} alt="Organized" />
@@ -55,6 +94,11 @@ const MainContent = () => {
                 By bringing your coffee right to your office doorstep, we let
                 you focus on your work
               </p>
+              {!isMobile ? (
+                <div className={Style.desktopBtn}>{renderBtns()}</div>
+              ) : (
+                <React.Fragment></React.Fragment>
+              )}
             </div>
             <div className="col-md-6">
               <img src={HappyImg} className={Style.images} alt="Satisfying" />
@@ -62,31 +106,11 @@ const MainContent = () => {
           </div>
         </Carousel>
       </div>
-
-      <div className={Style.bottom}>
-        <Link to="/services">
-          <button className={btnStyle1}>
-            <span className={btnText}>View Our Services</span>
-            <FontAwesomeIcon
-              className={Style.fontAwesome}
-              icon={faWineGlassAlt}
-              color="#dfddc7"
-              width="18"
-            />
-          </button>
-        </Link>
-        <Link to="/">
-          <button className={btnStyle2}>
-            <span className={btnText}>Back To Home Page</span>
-            <FontAwesomeIcon
-              className={Style.fontAwesome}
-              icon={faHome}
-              color="#dfddc7"
-              width="18"
-            />
-          </button>
-        </Link>
-      </div>
+      {isMobile ? (
+        <div className={Style.bottom}>{renderBtns()}</div>
+      ) : (
+        <React.Fragment></React.Fragment>
+      )}
     </div>
   )
 }
