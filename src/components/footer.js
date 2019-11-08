@@ -11,7 +11,7 @@ import Style from "../styles/footer.module.css"
 
 const Footer = () => {
   let footer = `${Style.footer}`,
-    icon = `${Style.fontAwesome} mr-2 mt-2`
+    icon = `${Style.fontAwesome} mr-3 mt-2`
 
   return (
     <div className={footer}>
