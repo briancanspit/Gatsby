@@ -15,7 +15,7 @@ const renderBtns = () => {
     btnStyle2 = `btn btn-lg ${Style.button} ${Style.btnTwo}`,
     btnText = `mr-2 ${Style.buttonText}`
   return (
-    <React.Fragment>
+    <div className={Style.btnContainer}>
       <Link to="/services">
         <button className={btnStyle1}>
           <span className={btnText}>Our Services</span>
@@ -38,7 +38,7 @@ const renderBtns = () => {
           />
         </button>
       </Link>
-    </React.Fragment>
+    </div>
   )
 }
 

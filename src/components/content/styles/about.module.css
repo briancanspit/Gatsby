@@ -48,6 +48,10 @@
   margin-bottom: 50px;
 }
 
+.btn-container {
+  margin-bottom: 20%;
+}
+
 .button {
   background: #2f2e41 !important;
 }

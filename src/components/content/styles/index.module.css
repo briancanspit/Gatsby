@@ -56,6 +56,10 @@
   letter-spacing: 1px;
 }
 
+.btn-container {
+  margin-bottom: 20%;
+}
+
 .button {
   background: #2f2e41;
 }
@@ -101,5 +105,17 @@
   }
   .content-text {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .btn-two {
+    margin-bottom: 2.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-two {
+    margin-bottom: 0;
   }
 }

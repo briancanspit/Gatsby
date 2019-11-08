@@ -48,28 +48,30 @@ const Content = () => {
               <strong>free</strong>!
             </h4>
             <br />
-            <Link to="/about">
-              <button className={btnStyle1}>
-                <span className={btnText}>Learn More</span>
-                <FontAwesomeIcon
-                  className={Style.fontAwesome}
-                  icon={faMugHot}
-                  color="#dfddc7"
-                  width="18"
-                />
-              </button>
-            </Link>
-            <Link to="/login">
-              <button className={btnStyle2}>
-                <span className={btnText}>Order Now</span>
-                <FontAwesomeIcon
-                  className={Style.fontAwesome}
-                  icon={faCartPlus}
-                  color="#dfddc7"
-                  width="18"
-                />
-              </button>
-            </Link>
+            <div className={Style.btnContainer}>
+              <Link to="/about">
+                <button className={btnStyle1}>
+                  <span className={btnText}>Learn More</span>
+                  <FontAwesomeIcon
+                    className={Style.fontAwesome}
+                    icon={faMugHot}
+                    color="#dfddc7"
+                    width="18"
+                  />
+                </button>
+              </Link>
+              <Link to="/login">
+                <button className={btnStyle2}>
+                  <span className={btnText}>Order Now</span>
+                  <FontAwesomeIcon
+                    className={Style.fontAwesome}
+                    icon={faCartPlus}
+                    color="#dfddc7"
+                    width="18"
+                  />
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
