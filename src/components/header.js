@@ -27,7 +27,7 @@ class Header extends Component {
       : "navbar-toggler navbar-toggler-right"
 
     const linkClass = `nav-link ${HeaderStyle.link}`
-    const navClass = `navbar navbar-expand-lg fixed-top navbar-dark bg-dark`
+    const navClass = `navbar navbar-expand-lg fixed-top navbar-dark bg-dark ${HeaderStyle.navBar}`
     const loginStyle = `nav-item ${HeaderStyle.loginButton}`
     const loginText = `nav-link ${HeaderStyle.link} ${HeaderStyle.loginText}`
     return (
