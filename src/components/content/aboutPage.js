@@ -18,7 +18,7 @@ const renderBtns = () => {
     <React.Fragment>
       <Link to="/services">
         <button className={btnStyle1}>
-          <span className={btnText}>View Our Services</span>
+          <span className={btnText}>Our Services</span>
           <FontAwesomeIcon
             className={Style.fontAwesome}
             icon={faWineGlassAlt}
@@ -29,7 +29,7 @@ const renderBtns = () => {
       </Link>
       <Link to="/">
         <button className={btnStyle2}>
-          <span className={btnText}>Back To Home Page</span>
+          <span className={btnText}>Back To Home</span>
           <FontAwesomeIcon
             className={Style.fontAwesome}
             icon={faHome}
