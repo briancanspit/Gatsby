@@ -94,7 +94,7 @@
   }
   .btn-two {
     margin-top: 10px !important;
-    margin-bottom: 40px;
+    margin-bottom: 2.5%;
   }
   .coffee-img {
     padding-top: 70px;
@@ -108,14 +108,4 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .btn-two {
-    margin-bottom: 2.5%;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  .btn-two {
-    margin-bottom: 0;
-  }
-}
