@@ -10,6 +10,10 @@
 }
 
 .font-awesome {
-  color: #ff7956 !important;
+  color: whitesmoke !important;
   font-size: 22px !important;
+}
+
+.font-awesome:hover {
+  color: #ff7956 !important;
 }

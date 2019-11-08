@@ -61,7 +61,7 @@ const Content = () => {
             </Link>
             <Link to="/login">
               <button className={btnStyle2}>
-                <span className={btnText}>Order Yours</span>
+                <span className={btnText}>Order Now</span>
                 <FontAwesomeIcon
                   className={Style.fontAwesome}
                   icon={faCartPlus}
