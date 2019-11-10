@@ -61,8 +61,8 @@ class Header extends Component {
                   </Link>
                 </li>
                 <li className="nav-item" style={{ paddingRight: 25 }}>
-                  <Link className={linkClass} to="/services">
-                    Services
+                  <Link className={linkClass} to="/pricing">
+                    Pricing
                   </Link>
                 </li>
                 <li className="nav-item" style={{ paddingRight: 25 }}>

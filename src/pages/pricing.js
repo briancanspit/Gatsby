@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import MainContent from "../components/content/servicesPage"
+import MainContent from "../components/content/pricingPage"
 
-const LoginPage = () => {
+const PricingPage = () => {
   return (
     <Layout>
       <MainContent />
@@ -10,4 +10,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default PricingPage

@@ -16,9 +16,9 @@ const renderBtns = () => {
     btnText = `mr-2 ${Style.buttonText}`
   return (
     <div className={Style.btnContainer}>
-      <Link to="/services">
+      <Link to="/pricing">
         <button className={btnStyle1}>
-          <span className={btnText}>Our Services</span>
+          <span className={btnText}>See Our Plans</span>
           <FontAwesomeIcon
             className={Style.fontAwesome}
             icon={faWineGlassAlt}
