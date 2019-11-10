@@ -14,7 +14,7 @@ const MainContent = () => {
       <div className="row justify-content-center">
         <div className="col-md-3"></div>
         <div className="col-md-6">
-          <h2 className={header}>Page not found</h2>
+          <h2 className={header}>Oops! Page not found.</h2>
           <img src={ErrorImg} width="100%" height="100%" alt="Page not found" />
           <Link to="/" className={Style.center}>
             <button className={btnStyle1}>
