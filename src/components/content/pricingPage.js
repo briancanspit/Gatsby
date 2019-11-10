@@ -4,6 +4,7 @@ import Style from "./styles/pricing.module.css"
 const MainContent = () => {
   let top = `${Style.header} ${Style.top}`
   let cost = `${Style.cost}`
+  let pro = `${Style.columns} ${Style.pro}`
   return (
     <div className="fade-in-bck">
       <div className={Style.columns}>
@@ -40,7 +41,7 @@ const MainContent = () => {
         </ul>
       </div>
 
-      <div className={Style.columns}>
+      <div className={pro}>
         <ul className={Style.price}>
           <li className={top}>Pro</li>
           <li className={cost}>$ 49.99 / month</li>
