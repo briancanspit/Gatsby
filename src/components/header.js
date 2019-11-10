@@ -72,7 +72,14 @@ class Header extends Component {
                 </li>
                 <li className={loginStyle}>
                   <Link className={loginText} to="/login">
-                    Log In
+                    <img
+                      src="https://img.icons8.com/color/50/000000/google-logo.png"
+                      width="30px"
+                      height="30px"
+                      alt="Google"
+                      className={HeaderStyle.google}
+                    />
+                    Sign up
                   </Link>
                 </li>
               </ul>

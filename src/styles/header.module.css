@@ -19,21 +19,26 @@
 }
 
 .login-button {
-  background: #ff7956;
-  color: #000 !important;
+  background: #e6e6e6;
   border-radius: 50px;
   padding: 0px 20px;
 }
 
 .login-button:hover {
-  background: #01d28e;
+  background: #2f2e41;
+  border: 1px solid #ff7956;
   cursor: pointer;
 }
 
 .login-text {
-  color: #333 !important;
+  color: #666666 !important;
+  margin-top: 1px;
 }
 
 .login-button:hover > .login-text {
-  color: #fff !important;
+  color: #f2f2f2 !important;
+}
+
+.google {
+  margin-right: 7px;
 }
