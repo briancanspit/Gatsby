@@ -60,7 +60,7 @@ const Content = () => {
                   />
                 </button>
               </Link>
-              <Link to="/login">
+              <Link to="/pricing">
                 <button className={btnStyle2}>
                   <span className={btnText}>Make An Order</span>
                   <FontAwesomeIcon
