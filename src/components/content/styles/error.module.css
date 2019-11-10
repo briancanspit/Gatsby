@@ -1,0 +1,36 @@
+.header {
+  font-size: 20px;
+  color: #940a37;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  background: #2f2e41 !important;
+}
+
+.button-text {
+  font-family: "Mukta";
+  color: #f5f0e3;
+}
+
+.button:hover {
+  background: #940a37 !important;
+}
+
+.button:hover > .button-text {
+  color: #f1bc31;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.button:hover > .font-awesome {
+  color: #f1bc31;
+}
+
+.font-awesome {
+  color: #f5f0e3;
+  font-size: 18px !important;
+}

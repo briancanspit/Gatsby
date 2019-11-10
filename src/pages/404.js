@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import MainContent from "../components/content/aboutPage"
+import MainContent from "../components/content/errorPage"
 
-const AboutPage = () => {
+const ErrorPage = () => {
   return (
     <Layout>
       <MainContent />
@@ -10,4 +10,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default ErrorPage
