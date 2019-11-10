@@ -48,7 +48,9 @@ const MainContent = () => {
   return (
     <div className={mainContainer}>
       <div className={Style.top}>
-        <h5 className={Style.head}>{isMobile ? "We Are" : "About Us"}</h5>
+        <h5 className={Style.head}>
+          {isMobile ? "We Are" : "Here's a little bit about who we are"}
+        </h5>
       </div>
 
       <div className={innerContainer}>
